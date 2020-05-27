@@ -1,0 +1,202 @@
+body {
+    background-color: #fff;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#webgl-secne {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Pointerlock */
+#meniu {
+    position: absolute;
+    font-family: arial;
+    width: 100%;
+    height: 100%;
+    /* display: -webkit-box;
+display: -moz-box;
+display: box;
+-webkit-box-orient: horizontal;
+-moz-box-orient: horizontal;
+box-orient: horizontal;
+-webkit-box-pack: center;
+-moz-box-pack: center;
+box-pack: center;
+-webkit-box-align: center;
+-moz-box-align: center; */
+    box-align: center;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+    padding: 180px 0;
+    background-size: cover;
+}
+
+#instrukcija {
+    position: absolute;
+    font-family: arial;
+    width: 100%;
+    height: 100%;
+    /*   display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center; */
+    box-align: center;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+    padding: 180px 0;
+    font-family: game;
+    font-size: 50px;
+    /* background-size: cover; */
+}
+
+#options {
+    position: absolute;
+    font-family: arial;
+    width: 100%;
+    height: 100%;
+    /*   display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center; */
+    box-align: center;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+    padding: 180px 0;
+    /* background-size: cover; */
+}
+
+#lifecount {
+    position: fixed;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+    /*padding: 250px 0;*/
+}
+
+
+
+#gameover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@font-face {
+    font-family: game;
+    src: url(http://127.0.0.1:8080/font/GlueGun.ttf);
+}
+
+#gameover_span {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-family: game;
+    color: #ffffff;
+}
+
+#options_text {
+    font-family: game;
+    font-size: 40px;
+}
+
+#red {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }

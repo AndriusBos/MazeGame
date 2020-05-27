@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Computer Graphics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <!-- Libraries -->
+    <script src="lib/three.js"></script>
+    <script src="lib/WebGL.js"></script>
+    <script src="lib/stats.min.js"></script>
+    <script src="lib/controls/PointerLockControls.js"></script>
+    <script src="lib/loaders/OBJLoader.js"></script>
+    <script src="lib/loaders/GLTFLoader.js"></script>
+    <script src="lib/loaders/FBXLoader.js"></script>
+    <script src="lib/loaders/MTLLoader.js"></script>
+
+    <script src="js/app.js" defer></script>
+
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div id="blocker" style="background-image: url('http://127.0.0.1:8080/bg.jpg');">
+
+        <!-- Meniu -->
+        <div id="meniu">
+            <div id="GameName"><img src="http://127.0.0.1:8080/game_name_s.png"></div><br><br>
+            <input type="image" src="http://127.0.0.1:8080/game_button_play.png" id="PLAY"><br><br>
+            <input type="image" src="http://127.0.0.1:8080/game_button_about.png" width="250" id="INSTRUCTION" onclick="goToInstruction()"></br></br>
+            <input type="image" src="http://127.0.0.1:8080/game_button_options.png" width="250" id="OPTIONS" onclick="goToOptions()"></br></br>
+        </div>
+
+        <!-- Instrukcija -->
+        <div id="instrukcija">
+            <img src="http://127.0.0.1:8080/game_button_about.png"><br /><br />
+            Controls - W, A, S, D and mouse. </br></br>
+            SHIFT - run</br></br>
+
+            The goal of the game is to find a way out. <br /><br />
+            Just be sure to watch out for ghosts ..<br /><br />
+            <input type="image" src="http://127.0.0.1:8080/game_button_back.png" width="250" onclick="backToMeniu()"><br><br>
+        </div>
+
+        <!-- Nustatymai -->
+        <div id="options">
+            <img src="http://127.0.0.1:8080/game_button_options.png"><br /><br />
+            <label id="options_text">
+                video graphics
+            </label><br><br>
+            <select id="quality" onchange="apply()">
+                <option value="low">LOW</option>
+                <option value="medium">MEDIUM</option>
+                <option selected value="high">HIGH</option>
+            </select>
+            <br><br>
+
+
+            <span id="options_text">MUSIC/SOUND</span><br><br>
+            <label class="switch">
+
+                <input type="checkbox" id="sound_checkBox" onchange="applySound()">
+                <span class="slider round"></span>
+            </label><br><br>
+
+            <input type="image" src="http://127.0.0.1:8080/game_button_back.png" width="250" onclick="backToMeniu()"><br><br>
+        </div>
+
+    </div>
+
+    <div id="lifecount">
+        <img id="life_5" src="http://127.0.0.1:8080/heart.png" width="50" />
+        <img id="life_4" src="http://127.0.0.1:8080/heart.png" width="50" />
+        <img id="life_3" src="http://127.0.0.1:8080/heart.png" width="50" />
+        <img id="life_2" src="http://127.0.0.1:8080/heart.png" width="50" />
+        <img id="life_1" src="http://127.0.0.1:8080/heart.png" width="50" />
+    </div>
+    <div id="red"></div>
+
+    <div id="webgl-secne">
+    </div>
+    <div id="fps"></div>
+</body>
+</html>

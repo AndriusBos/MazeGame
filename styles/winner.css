@@ -1,0 +1,43 @@
+﻿html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("http://127.0.0.1:8080/bg.jpg");
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#medal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+
+@font-face {
+    font-family: game;
+    src: url(http://127.0.0.1:8080/font/GlueGun.ttf);
+}
+
+.gametext {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    color: white;
+    font-size: 80px;
+    font-family: game;
+    text-align: center;
+}
+.button {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
