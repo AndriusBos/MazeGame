@@ -81,52 +81,52 @@ life_5.style.visibility = "hidden";
 red.style.visibility = "hidden";
 sound_checkBox.checked = true;
 
-const wall_512x512 = loader.load(' http://127.0.0.1:8080/wall/wall_512x512.jpg');
-const wall_512x512_bump = loader.load(' http://127.0.0.1:8080/wall/wall_512x512_bump.jpg');
-const floor_512x512 = loader.load('http://127.0.0.1:8080/floor/floor_512x512.jpg');
-const floor_512x512_bump = loader.load('http://127.0.0.1:8080/floor/floor_512x512_bump.jpg');
-const ceiling_512x512 = loader.load('http://127.0.0.1:8080/ceiling/ceiling_512x512.jpg');
-const ceiling_512x512_bump = loader.load('http://127.0.0.1:8080/ceiling/ceiling_512x512_bump.jpg');
-const door_512x512 = loader.load(' http://127.0.0.1:8080/door/door_512x512.jpg');
-const door_512x512_bump = loader.load(' http://127.0.0.1:8080/door/door_512x512_bump.jpg');
-const paiting_1_512x512 = loader.load('http://127.0.0.1:8080/paiting/1/paiting_1_512x512.jpg');
-const paiting_1_512x512_bump = loader.load('http://127.0.0.1:8080/paiting/1/paiting_1_512x512_bump.jpg');
-const paiting_2_512x512 = loader.load('http://127.0.0.1:8080/paiting/2/paiting_2_512x512.jpg');
-const paiting_2_512x512_bump = loader.load('http://127.0.0.1:8080/paiting/2/paiting_2_512x512_bump.jpg');
-const paiting_3_512x512 = loader.load('http://127.0.0.1:8080/paiting/3/paiting_3_512x512.jpg');
-const paiting_3_512x512_bump = loader.load('http://127.0.0.1:8080/paiting/3/paiting_3_512x512_bump.jpg');
-const healthBox_512x512 = loader.load('http://127.0.0.1:8080/healthBox/healthBox_512x512.jpg');
-const healthBox_512x512_bump = loader.load('http://127.0.0.1:8080/healthBox/healthBox_512x512_bump.jpg');
+const wall_512x512 = loader.load(' /local/wall/wall_512x512.jpg');
+const wall_512x512_bump = loader.load(' /local/wall/wall_512x512_bump.jpg');
+const floor_512x512 = loader.load('/local/floor/floor_512x512.jpg');
+const floor_512x512_bump = loader.load('/local/floor/floor_512x512_bump.jpg');
+const ceiling_512x512 = loader.load('/local/ceiling/ceiling_512x512.jpg');
+const ceiling_512x512_bump = loader.load('/local/ceiling/ceiling_512x512_bump.jpg');
+const door_512x512 = loader.load(' /local/door/door_512x512.jpg');
+const door_512x512_bump = loader.load(' /local/door/door_512x512_bump.jpg');
+const paiting_1_512x512 = loader.load('/local/paiting/1/paiting_1_512x512.jpg');
+const paiting_1_512x512_bump = loader.load('/local/paiting/1/paiting_1_512x512_bump.jpg');
+const paiting_2_512x512 = loader.load('/local/paiting/2/paiting_2_512x512.jpg');
+const paiting_2_512x512_bump = loader.load('/local/paiting/2/paiting_2_512x512_bump.jpg');
+const paiting_3_512x512 = loader.load('/local/paiting/3/paiting_3_512x512.jpg');
+const paiting_3_512x512_bump = loader.load('/local/paiting/3/paiting_3_512x512_bump.jpg');
+const healthBox_512x512 = loader.load('/local/healthBox/healthBox_512x512.jpg');
+const healthBox_512x512_bump = loader.load('/local/healthBox/healthBox_512x512_bump.jpg');
 
-const wall_256x256 = loader.load(' http://127.0.0.1:8080/wall/wall_256x256.jpg');
-const wall_256x256_bump = loader.load(' http://127.0.0.1:8080/wall/wall_256x256_bump.jpg');
-const floor_256x256 = loader.load('http://127.0.0.1:8080/floor/floor_256x256.jpg');
-const floor_256x256_bump = loader.load('http://127.0.0.1:8080/floor/floor_256x256_bump.jpg');
-const ceiling_256x256 = loader.load('http://127.0.0.1:8080/ceiling/ceiling_256x256.jpg');
-const ceiling_256x256_bump = loader.load('http://127.0.0.1:8080/ceiling/ceiling_256x256_bump.jpg');
-const door_256x256 = loader.load(' http://127.0.0.1:8080/door/door_256x256.jpg');
-const door_256x256_bump = loader.load(' http://127.0.0.1:8080/door/door_256x256_bump.jpg');
-const paiting_1_256x256 = loader.load('http://127.0.0.1:8080/paiting/1/paiting_1_256x256.jpg');
-const paiting_1_256x256_bump = loader.load('http://127.0.0.1:8080/paiting/1/paiting_1_256x256_bump.jpg');
-const paiting_2_256x256 = loader.load('http://127.0.0.1:8080/paiting/2/paiting_2_256x256.jpg');
-const paiting_2_256x256_bump = loader.load('http://127.0.0.1:8080/paiting/2/paiting_2_256x256_bump.jpg');
-const paiting_3_256x256 = loader.load('http://127.0.0.1:8080/paiting/3/paiting_3_256x256.jpg');
-const paiting_3_256x256_bump = loader.load('http://127.0.0.1:8080/paiting/3/paiting_3_256x256_bump.jpg');
+const wall_256x256 = loader.load(' /local/wall/wall_256x256.jpg');
+const wall_256x256_bump = loader.load(' /local/wall/wall_256x256_bump.jpg');
+const floor_256x256 = loader.load('/local/floor/floor_256x256.jpg');
+const floor_256x256_bump = loader.load('/local/floor/floor_256x256_bump.jpg');
+const ceiling_256x256 = loader.load('/local/ceiling/ceiling_256x256.jpg');
+const ceiling_256x256_bump = loader.load('/local/ceiling/ceiling_256x256_bump.jpg');
+const door_256x256 = loader.load(' /local/door/door_256x256.jpg');
+const door_256x256_bump = loader.load(' /local/door/door_256x256_bump.jpg');
+const paiting_1_256x256 = loader.load('/local/paiting/1/paiting_1_256x256.jpg');
+const paiting_1_256x256_bump = loader.load('/local/paiting/1/paiting_1_256x256_bump.jpg');
+const paiting_2_256x256 = loader.load('/local/paiting/2/paiting_2_256x256.jpg');
+const paiting_2_256x256_bump = loader.load('/local/paiting/2/paiting_2_256x256_bump.jpg');
+const paiting_3_256x256 = loader.load('/local/paiting/3/paiting_3_256x256.jpg');
+const paiting_3_256x256_bump = loader.load('/local/paiting/3/paiting_3_256x256_bump.jpg');
 
-const wall_128x128 = loader.load(' http://127.0.0.1:8080/wall/wall_128x128.jpg');
-const wall_128x128_bump = loader.load(' http://127.0.0.1:8080/wall/wall_128x128_bump.jpg');
-const floor_128x128 = loader.load('http://127.0.0.1:8080/floor/floor_128x128.jpg');
-const floor_128x128_bump = loader.load('http://127.0.0.1:8080/floor/floor_128x128_bump.jpg');
-const ceiling_128x128 = loader.load('http://127.0.0.1:8080/ceiling/ceiling_128x128.jpg');
-const ceiling_128x128_bump = loader.load('http://127.0.0.1:8080/ceiling/ceiling_128x128_bump.jpg');
-const door_128x128 = loader.load(' http://127.0.0.1:8080/door/door_128x128.jpg');
-const door_128x128_bump = loader.load(' http://127.0.0.1:8080/door/door_128x128_bump.jpg');
-const paiting_1_128x128 = loader.load('http://127.0.0.1:8080/paiting/1/paiting_1_128x128.jpg');
-const paiting_1_128x128_bump = loader.load('http://127.0.0.1:8080/paiting/1/paiting_1_128x128_bump.jpg');
-const paiting_2_128x128 = loader.load('http://127.0.0.1:8080/paiting/2/paiting_2_128x128.jpg');
-const paiting_2_128x128_bump = loader.load('http://127.0.0.1:8080/paiting/2/paiting_2_128x128_bump.jpg');
-const paiting_3_128x128 = loader.load('http://127.0.0.1:8080/paiting/3/paiting_3_128x128.jpg');
-const paiting_3_128x128_bump = loader.load('http://127.0.0.1:8080/paiting/3/paiting_3_128x128_bump.jpg');
+const wall_128x128 = loader.load(' /local/wall/wall_128x128.jpg');
+const wall_128x128_bump = loader.load(' /local/wall/wall_128x128_bump.jpg');
+const floor_128x128 = loader.load('/local/floor/floor_128x128.jpg');
+const floor_128x128_bump = loader.load('/local/floor/floor_128x128_bump.jpg');
+const ceiling_128x128 = loader.load('/local/ceiling/ceiling_128x128.jpg');
+const ceiling_128x128_bump = loader.load('/local/ceiling/ceiling_128x128_bump.jpg');
+const door_128x128 = loader.load(' /local/door/door_128x128.jpg');
+const door_128x128_bump = loader.load(' /local/door/door_128x128_bump.jpg');
+const paiting_1_128x128 = loader.load('/local/paiting/1/paiting_1_128x128.jpg');
+const paiting_1_128x128_bump = loader.load('/local/paiting/1/paiting_1_128x128_bump.jpg');
+const paiting_2_128x128 = loader.load('/local/paiting/2/paiting_2_128x128.jpg');
+const paiting_2_128x128_bump = loader.load('/local/paiting/2/paiting_2_128x128_bump.jpg');
+const paiting_3_128x128 = loader.load('/local/paiting/3/paiting_3_128x128.jpg');
+const paiting_3_128x128_bump = loader.load('/local/paiting/3/paiting_3_128x128_bump.jpg');
 
 let TextureMap = wall_512x512;
 let TextureMapBump = wall_512x512_bump;
@@ -232,7 +232,7 @@ function init() {
 function createAudio() {
 
     camera.add(listener);
-    audioLoader.load('http://127.0.0.1:8080/music/track_0.mp3', function (buffer) {
+    audioLoader.load('/local/music/track_0.mp3', function (buffer) {
         soundtrack.setBuffer(buffer);
         soundtrack.setLoop(true);
         soundtrack.setVolume(0.5);
@@ -320,7 +320,7 @@ function update() {
                 life += 1;
                 powerUpHit = true;
                 const sound = new THREE.Audio(listener);
-                audioLoader.load('http://127.0.0.1:8080/music/heal.wav', function (buffer) {
+                audioLoader.load('/local/music/heal.wav', function (buffer) {
                     sound.setBuffer(buffer);
                     sound.setVolume(0.5);
                     sound.play();
@@ -363,7 +363,7 @@ function update() {
                 life -= 1;
                 playerHit = true;
                 const sound = new THREE.Audio(listener);
-                audioLoader.load('http://127.0.0.1:8080/music/hit.wav', function (buffer) {
+                audioLoader.load('/local/music/hit.wav', function (buffer) {
                     sound.setBuffer(buffer);
                     sound.setVolume(0.5);
                     sound.play();
@@ -837,7 +837,7 @@ function createMeshes() {
     //priešas
 
     for (let i = 0; i < 10; i++) {
-        const url = 'http://127.0.0.1:8080/scene.gltf';
+        const url = '/local/scene.gltf';
         gltf_Loader.load(url, (gltf) => {
 
             const object = gltf.scene;
@@ -871,7 +871,7 @@ function createMeshes() {
 
     // ---- ŽAIDIMO PABAIGOS ELEMENTAS - PRADŽIA -----
 
-    const objURL = 'http://127.0.0.1:8080/star.obj';
+    const objURL = '/local/star.obj';
     const material = new THREE.MeshLambertMaterial({ color: 'yellow', side: THREE.DoubleSide });
     obj_Loader.load(objURL, function (obj) {
         obj.traverse(function (child) {
@@ -893,9 +893,9 @@ function createMeshes() {
 
     //box
 
-    //const OBJFile = 'http://127.0.0.1:8080/box/box.obj';
-    //const MTLFile = 'http://127.0.0.1:8080/box/box.mtl';
-    //const JPGFile = 'http://127.0.0.1:8080/box/Weapon_box_Albedo.jpg';
+    //const OBJFile = '/local/box/box.obj';
+    //const MTLFile = '/local/box/box.mtl';
+    //const JPGFile = '/local/box/Weapon_box_Albedo.jpg';
     //new THREE.MTLLoader()
     //    .load(MTLFile, function (materials) {
     //        materials.preload();
