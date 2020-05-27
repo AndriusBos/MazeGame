@@ -253,7 +253,7 @@ function life_visible() {
     switch (life) {
         case 0:
             return runAnim = false,
-                setTimeout(function () { location.replace("https://htmlpreview.github.io/?https://github.com/AndriusBos/MazeGame/blob/master/lose.html"); }, 1000);
+                setTimeout(function () { location.replace("lose.html"); }, 1000);
 
         case 1:
             return life_5.style.visibility = "hidden",
@@ -298,7 +298,7 @@ function update() {
     starBox.setFromObject(star);
     if (new THREE.Box3().setFromObject(PlBox).intersectsBox(starBox)) {
         runAnim = false;
-        setTimeout(function () { location.replace("https://htmlpreview.github.io/?https://github.com/AndriusBos/MazeGame/blob/master/winner.html"); }, 100);
+        setTimeout(function () { location.replace("winner.html"); }, 100);
     }
 
     // ---- ŽAIDIMO PABAIGOS ELEMENTO JUDĖJIMAS/FUNKCIONALUMAS - PRADŽIA -----
