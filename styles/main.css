@@ -113,7 +113,7 @@ box-pack: center;
 
 @font-face {
     font-family: game;
-    src: url(../local/font/GlueGun.ttf);
+    src: url(local/font/GlueGun.ttf);
 }
 
 #gameover_span {
