@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: game;
-    src: url(http://127.0.0.1:8080/font/GlueGun.ttf);
+    src: url(../local/font/GlueGun.ttf);
 }
 
 .gametext {
