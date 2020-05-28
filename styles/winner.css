@@ -5,7 +5,7 @@
 
 .bg {
     /* The image used */
-    background-image: url("http://127.0.0.1:8080/bg.jpg");
+    background-image: url("local/bg.jpg");
     /* Full height */
     height: 100%;
     background-position: center;
@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: game;
-    src: url(../local/font/GlueGun.ttf);
+    src: url(local/font/GlueGun.ttf);
 }
 
 .gametext {
