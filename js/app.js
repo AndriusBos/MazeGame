@@ -713,21 +713,6 @@ function createMaze() {
     const wall = [siena, siena, invisible, invisible, siena, siena];
     const doors = [invisible, invisible, invisible, invisible, durys, durys];
 
-    function getCellYPosition(v, h) {
-        switch (v) {
-            case 1:
-                return h / 2;
-            case 2:
-                return h / 2;
-            case 3:
-                return h / 2;
-            case 4:
-                return h / 2;
-            case 5:
-                return h / 2;
-        }
-    }
-
     function getCellType(v) {
 
         switch (v) {
@@ -754,7 +739,7 @@ function createMaze() {
                 const MazeWallMat = getCellType(v);
                 const MazeWall = new THREE.Mesh(MazeWallGeo, MazeWallMat);
                 const _x = x * w + (w / 2);
-                const _y = getCellYPosition(v, h);
+                const _y = h / 2;
                 const _z = z * d + (d / 2);
                 MazeWall.position.set(_x, _y, _z);
                 MazeWall.geometry.computeBoundingBox();
@@ -768,13 +753,6 @@ function createMaze() {
 
 function createHealth() {
 
-    function getCellYPosition1(v, h) {
-        switch (v) {
-            case 1:
-                return h / 2.2;
-        }
-    }
-
     health_map.forEach((_, z) => {
         health_map[z].forEach((v, x) => {
             if (v !== 0) {
@@ -786,7 +764,7 @@ function createHealth() {
                 powerUp = new THREE.Mesh(powerUpGeo, powerUpMat);
                 const addObjects = powerUp;
                 const _x = x * w + (w / 2);
-                const _y = getCellYPosition1(v, h);
+                const _y = h / 2.2;
                 const _z = z * d + (d / 2);
                 addObjects.position.set(_x, _y, _z);
                 ObjectsGroup.add(addObjects);
