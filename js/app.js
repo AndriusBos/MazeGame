@@ -371,13 +371,10 @@ function update() {
                 red.style.visibility = "visible";
                 setTimeout(function () { red.style.visibility = "hidden"; }, 100);
                 setTimeout(function () { playerHit = false; }, 2000);
-                console.log(life);
             }
 
             if (!hit && (wall0).intersectsBox(enemyBox3)) {
                 metaData.enemies[i].vz *= -1;
-                console.log((wall0).intersectsBox(enemyBox3));
-                console.log('collide with 0');
                 hit = true;
                 setTimeout(function () { hit = false; }, 100);
             }
@@ -385,8 +382,6 @@ function update() {
 
             if (!hit && (wall1).intersectsBox(enemyBox3)) {
                 metaData.enemies[i].vz *= -1;
-                console.log((wall0).intersectsBox(enemyBox3));
-                console.log('collide with 1');
                 hit = true;
                 setTimeout(function () { hit = false; }, 100);
             }
@@ -394,8 +389,6 @@ function update() {
 
             if (!hit && (wall2).intersectsBox(enemyBox3)) {
                 metaData.enemies[i].vx *= -1;
-                console.log((wall0).intersectsBox(enemyBox3));
-                console.log('collide with 2');
                 hit = true;
                 setTimeout(function () { hit = false; }, 100);
             }
@@ -403,8 +396,6 @@ function update() {
 
             if (!hit && (wall3).intersectsBox(enemyBox3)) {
                 metaData.enemies[i].vx *= -1;
-                console.log((wall0).intersectsBox(enemyBox3));
-                console.log('collide with 3');
                 hit = true;
                 setTimeout(function () { hit = false; }, 100);
             }
@@ -467,7 +458,6 @@ function animate() {
         for (const box of near) {
             if (is_inside(box, camera.position)) {
                 inside_box = true
-                //console.log('STUCK')
             }
         }
 
@@ -830,9 +820,6 @@ function createMeshes() {
                 vy: Math.random() * 0.2 - 0.1,
                 vz: Math.random() * 0.2 - 0.1
             });
-            //mixer = new THREE.AnimationMixer(enemy);
-            //const action = mixer.clipAction(gltf.animations[0]);
-            //action.play();
             enemies.add(enemy);
             level_1.add(enemies);
         });
